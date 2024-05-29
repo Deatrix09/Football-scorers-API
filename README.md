@@ -16,11 +16,11 @@ Tento projekt poskytuje API pro nejlepší střelce ve fotbale za roky 2016-2020
    https://github.com/Deatrix09/Football-scorers-API.git
    cd Football-scorers-API
    
-# Nastavení PostgreSQL databáze s Dockerem
+## Nastavení PostgreSQL databáze s Dockerem
 
 Postupujte podle následujících kroků pro nastavení databáze PostgreSQL pomocí Dockeru a konfiguraci vaší aplikace pro připojení k ní.
 
-## Krok 1: Vytvoření a spuštění Docker kontejneru pro PostgreSQL
+### Krok 1: Vytvoření a spuštění Docker kontejneru pro PostgreSQL
 
 Spusťte následující příkaz pro vytvoření a spuštění Docker kontejneru pro PostgreSQL:
 
@@ -30,7 +30,7 @@ Spusťte následující příkaz pro vytvoření a spuštění Docker kontejneru
 
 Nahraďte yourpassword a youruser vaším zvoleným heslem a uživatelským jménem pro PostgreSQL.
 
-## Krok 2: Aktualizace application.properties
+### Krok 2: Aktualizace application.properties
 Otevřete soubor src/main/resources/application.properties ve vašem projektu a aktualizujte nastavení připojení k databázi následovně:
 
 ```bash
