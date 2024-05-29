@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="IDK">
+        <createTable tableName="country">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="country_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+
+    <changeSet id="2" author="IDK">
+        <insert tableName="country">
+            <column name="country_name" value="Spain"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="Italy"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="Germany"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="England"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="Brazil"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="France"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="USA"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="Portugal"/>
+        </insert>
+        <insert tableName="country">
+            <column name="country_name" value="Netherlands"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

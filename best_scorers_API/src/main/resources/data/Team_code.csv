@@ -1,0 +1,170 @@
+id,club_code,league_id
+1,Real Betis,1
+2,FC Barcelona,1
+3,Atlético Madrid,1
+4,Real Madrid,1
+5,Celta Vigo,1
+6,SD Eibar,1
+7,SD Huesca,1
+8,Valencia CF,1
+9,Granada CF,1
+10,Elche CF,1
+11,CA Osasuna,1
+12,RC Celta,1
+13,Getafe CF,1
+14,Levante UD,1
+15,CD Leganés,1
+16,SD Espanyol,1
+17,Deportivo Alavés,1
+18,Villarreal CF,1
+19,Sevilla FC,1
+20,Athletic Bilbao,1
+21,Sassuolo,2
+22,SS Lazio,2
+23,Hellas Verona,2
+24,SSC Napoli,2
+25,Atalanta BC,2
+26,ACF Fiorentina,2
+27,Benevento Calcio,2
+28,Cagliari Calcio,2
+29,Crotone,2
+30,AS Roma,2
+31,UC Sampdoria,2
+32,AC Milan,2
+33,FC Internazionale Milano,2
+34,Bologna FC,2
+35,Genoa CFC,2
+36,Udinese Calcio,2
+37,Juventus FC,2
+38,Parma Calcio 1913,2
+39,Spezia Calcio,2
+40,Hertha BSC,3
+41,Borussia Mönchengladbach,3
+42,FC Bayern Munich,3
+43,TSG 1899 Hoffenheim,3
+44,FC Augsburg,3
+45,RB Leipzig,3
+46,SC Freiburg,3
+47,FC Schalke 04,3
+48,VfL Wolfsburg,3
+49,1. FSV Mainz 05,3
+50,1. FC Köln,3
+51,FC Union Berlin,3
+52,SV Werder Bremen,3
+53,Bayer 04 Leverkusen,3
+54,VfB Stuttgart,3
+55,Arminia Bielefeld,3
+56,Borussia Dortmund,3
+57,SV Darmstadt 98,3
+58,Tottenham Hotspur,4
+59,Leicester City,4
+60,Crystal Palace,4
+61,Liverpool FC,4
+62,Sheffield United FC,4
+63,Manchester City,4
+64,West Ham United,4
+65,Manchester United,4
+66,Fulham FC,4
+67,Chelsea FC,4
+68,AFC Bournemouth,4
+69,Arsenal FC,4
+70,Everton FC,4
+71,Burnley FC,4
+72,Norwich City,4
+73,Southampton FC,4
+74,Leeds United,4
+75,Brighton & Hove Albion,4
+76,Aston Villa,4
+77,Wolverhampton Wanderers,4
+78,Newcastle United,4
+79,Gremio,5
+80,Ceará Sporting Club,5
+81,São Paulo FC,5
+82,Santos FC,5
+83,Vasco da Gama,5
+84,Botafogo Futebol e Regatas,5
+85,Flamengo,5
+86,SC Corinthians Paulista,5
+87,Fluminense FC,5
+88,Club de Regatas do Flamengo,5
+89,Esporte Clube Bahia,5
+90,Internacional,5
+91,Goiás Esporte Clube,5
+92,Fortaleza Esporte Clube,5
+93,Bahia Atlético Clube,5
+94,Sport Club do Recife,5
+95,Atlético Mineiro,5
+96,Los Angeles FC,7
+97,Atalanta United FC,7
+98,San Jose Earthquakes,7
+99,Orlando City SC,7
+100,New York City FC,7
+101,Orlando City SC,7
+102,Philadelphia Union,7
+103,Minnesota United FC,7
+104,Chicago Fire FC,7
+105,Colorado Rapids,7
+106,Houston Dynamo,7
+107,Columbus Crew,7
+108,Toronto FC,7
+109,Sporting Kansas City,7
+110,Seattle FC,7
+111,Vancouver Whitecaps FC,7
+112,Club América,7
+113,Real Salt Lake,7
+114,Portland Timbers,7
+115,New York Red Bulls,7
+116,Los Angeles Galaxy,7
+117,FC Dallas,7
+118,D.C. United,7
+119,Montreal Impact,7
+120,New England Revolution,7
+121,SL Benfica,8
+122,SC Braga,8
+123,Vitória SC,8
+124,Rio Ave FC,8
+125,CD Tondela,8
+126,Portimonense SC,8
+127,Marítimo Madeira,8
+128,Gil Vicente FC,8
+129,Boavista FC,8
+130,FC Famalicão,8
+131,Nacional Madeira,8
+132,Boa Vista SC,8
+133,Moreirense FC,8
+134,FC Paços de Ferreira,8
+135,FC Porto,8
+136,Sporting CP,8
+137,Guamarães SC,8
+138,CD Santa Clara,8
+139,Heracles Almelo,9
+140,Fortuna Sittard,9
+141,Ajax Amsterdam,9
+142,VVV-Venlo,9
+143,PSV Eindhoven,9
+144,FC Twente,9
+145,Feyenoord Rotterdam,9
+146,SC Heerenveen,9
+147,Willem II Tilburg,9
+148,FC Emmen,9
+149,RKC Waalwijk,9
+150,Sparta Rotterdam,9
+151,Vittesse Arnhem,9
+152,Paris Saint-Germain,6
+153,Olympique de Marseille,6
+154,Olympique Lyon,6
+155,AS Monaco,6
+156,Stade Rennais,6
+157,OGC Nice,6
+158,FC Nantes,6
+159,Montpellier HSC,6
+160,RC Strasbourg,6
+161,FC Metz,6
+162,FC Lorient,6
+163,Dijon FCO,6
+164,Stade Brestois,6
+165,Angers SCO,6
+166,AS Saint-Étienne,6
+167,Lille OSC,6
+168,RC Lens,6
+169,AZ Alkmaar,9

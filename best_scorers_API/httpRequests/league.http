@@ -1,0 +1,11 @@
+### Send POST request with json body
+POST http://localhost:8090/leagues
+Content-Type: application/json
+
+{
+  "league_name": "Fortuna Liga"
+}
+
+
+### Get all leagues
+GET http://localhost:8090/leagues

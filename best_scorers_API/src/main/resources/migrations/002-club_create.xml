@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="3" author="IDK">
+        <createTable tableName="club">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="club_code" type="varchar(55)"/>
+            <column name="league_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="club"
+                                 baseColumnNames="league_id"
+                                 constraintName="fk_club_league_id"
+                                 referencedTableName="league"
+                                 referencedColumnNames="id"/>
+
+
+        <loadData tableName="club" file="data/Team_code.csv" separator="," encoding="UTF-8">
+            <column name="club_code"/>
+            <column name="league_id"/>
+        </loadData>
+
+
+        <sql>
+            SELECT setval(pg_get_serial_sequence('club', 'id'), (SELECT MAX(id) FROM club) + 1);
+        </sql>
+
+    </changeSet>
+
+
+</databaseChangeLog>

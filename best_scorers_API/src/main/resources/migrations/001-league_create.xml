@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="2" author="IDK">
+        <createTable tableName="league">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="league_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="league"
+                                 baseColumnNames="country_id"
+                                 constraintName="fk_league_country_id"
+                                 referencedTableName="country"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="3" author="IDK">
+        <insert tableName="league">
+            <column name="league_name" value="La Liga"/>
+            <column name="country_id" valueNumeric="1"/> <!-- Spain -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="Serie A"/>
+            <column name="country_id" valueNumeric="2"/> <!-- Italy -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="Bundesliga"/>
+            <column name="country_id" valueNumeric="3"/> <!-- Germany -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="Premier League"/>
+            <column name="country_id" valueNumeric="4"/> <!-- England -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="Campeonato Brasileiro Serie A"/>
+            <column name="country_id" valueNumeric="5"/> <!-- Brazil -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="France Ligue 1"/>
+            <column name="country_id" valueNumeric="6"/> <!-- France -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="MLS"/>
+            <column name="country_id" valueNumeric="7"/> <!-- USA -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="Primeira Liga"/>
+            <column name="country_id" valueNumeric="8"/> <!-- Portugal -->
+        </insert>
+        <insert tableName="league">
+            <column name="league_name" value="Eredivisie"/>
+            <column name="country_id" valueNumeric="9"/> <!-- Netherlands -->
+        </insert>
+
+        <insert tableName="league">
+            <column name="league_name" value="France Ligue 2"/>
+            <column name="country_id" valueNumeric="6"/> <!-- France -->
+        </insert>
+
+
+
+    </changeSet>
+
+</databaseChangeLog>

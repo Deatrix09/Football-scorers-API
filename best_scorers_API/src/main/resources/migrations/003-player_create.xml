@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="4" author="IDK">
+        <createTable tableName="player">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="full_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="matches_played" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="count_of_substitutions" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="minutes_played" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="goals_scored" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expected_goals" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expected_goals_per_match_avg" type="double"/>
+            <column name="shots" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="shots_on_target" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="shots_per_match_avg" type="double"/>
+            <column name="shots_on_target_per_match_avg" type="double"/>
+            <column name="year" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="club_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="player"
+                                 baseColumnNames="club_id"
+                                 constraintName="fk_player_club_id"
+                                 referencedTableName="club"
+                                 referencedColumnNames="id"/>
+
+        <loadData file="data/Players.csv" separator="," tableName="player" encoding="UTF-8">
+            <column name="full_name" header="Player_Names"/>
+            <column name="matches_played" header="Matches_Played"/>
+            <column name="count_of_substitutions" header="Substitution"/>
+            <column name="minutes_played" header="Minutes_Played"/>
+            <column name="goals_scored" header="Goals"/>
+            <column name="expected_goals" header="Expected_Goals"/>
+            <column name="expected_goals_per_match_avg" header="xG_Per_Match_Avg"/>
+            <column name="shots" header="Shots"/>
+            <column name="shots_on_target" header="Shots_On_Target"/>
+            <column name="shots_per_match_avg" header="Shots_Per_Match_Avg"/>
+            <column name="shots_on_target_per_match_avg" header="Shots_On_Target_Per_Match_Avg"/>
+            <column name="year" header="Year"/>
+            <column name="club_id" header="club_id"/>
+        </loadData>
+
+    </changeSet>
+
+
+</databaseChangeLog>
